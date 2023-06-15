@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+  <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css" />
+  <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+  <title>Integrate</title>
+</head>
+
+<body>
+  <h1>
+    Client: PetroDsouk
+  </h1>
+  <h3>
+    Type: Water Separation Package (EPF)
+  </h3>
+  <div>
+    <div class="row">
+      <h3>Live</h3>
+    </div>
+    <div class="row">
+      <table id="liveTable"></table>
+    </div>
+    <div class="row">
+      <h3>Minute</h3>
+    </div>
+    <div class="row">
+      <table class="table" id="dataTable" data-height="400" data-virtual-scroll="true"></table>
+    </div>
+    <div class="row">
+      <button class="btn btn-danger" id="clearButton">Clear</button>
+    </div>
+
+  </div>
+
+
+  <!-- <table id="dataTable" data-height="460"></table> -->
+  </div>
+
+  <script src="../dataScript.js"></script>
+</body>
+
+</html>

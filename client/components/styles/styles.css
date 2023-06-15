@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#mountNode {
+    height: 100vh;
+}

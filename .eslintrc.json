@@ -1,0 +1,82 @@
+{
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true,
+    "jquery": true,
+    "mocha": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
+  "rules": {
+    "max-len": [
+      "warn"
+    ],
+    "require-await": [
+      "error"
+    ],
+    "no-unused-vars": [
+      "warn"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "new-cap": [
+      "off"
+    ],
+    "require-jsdoc": [
+      "off"
+    ],
+    "valid-jsdoc": [
+      "off"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ]
+  },
+  "settings": {
+    "import/extensions": [
+      ".mjs",
+      ".js"
+    ],
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".mjs",
+          ".js"
+        ]
+      }
+    }
+  },
+  "plugins": [
+    "@babel",
+    "react",
+    "react-hooks"
+  ]
+}

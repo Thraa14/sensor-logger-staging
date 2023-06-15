@@ -1,0 +1,14 @@
+[ignore]
+.*/**/*.json
+.*/.cache/
+.*/dist/
+[include]
+.*/**/*.js
+.*/**/*.mjs
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
