@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
  * @returns {Promise<Connection>}
  */
 export async function setupDatabase(dbUrl, dbName, extraConfig = null) {
-  const mongoUrl = `${dbUrl}/${dbName}`;
+  const mongoUrl = `${dbUrl}/${dbName}?authSource=admin`;
   const defaults = {
     loggerLevel: 'info',
     useNewUrlParser: true,
