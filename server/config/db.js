@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
  * @returns {Promise<Connection>}
  */
 export async function setupDatabase(dbUrl, dbName, extraConfig = null) {
-  const mongoUrl = `mongodb://${dbUrl}/${dbName}`;
+  const mongoUrl = `${dbUrl}/${dbName}`;
   const defaults = {
     loggerLevel: 'info',
     useNewUrlParser: true,
