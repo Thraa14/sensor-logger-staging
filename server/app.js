@@ -22,7 +22,7 @@ import { clientsRouter } from './clients/clientsRoutes';
 
 
 const debug = makeDebug('app:main');
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 'https://integrate-daq.com/';
 
 function initializeServerEnvironment() {
   dotenv.config();

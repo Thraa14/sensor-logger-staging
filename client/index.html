@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> //ORIGNAL HTML
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,57 +12,126 @@
 <body>
 <div id="mountNode" class="root" ></div>
 <script src="index.jsx"></script>
-</body>
+</body> // END OF ORIGNAL HTML 
+</html> -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrate</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="components/styles/styles.css"/>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="formContent">
+      <div>
+         <img src="pico_logo.png" alt="PICO Energy logo">
+        <img
+          src="http://danielzawadzki.com/codepen/01/icon.svg"
+          id="icon"
+          alt="User Icon"/> 
+      </div>
+<h2>Login Form</h2>
+      <form id="loginForm">
+        <input type="text" id="login" name="login" placeholder="Login" />
+        <input
+          type="password"
+          id="password"
+          name="login"
+          placeholder="Password"
+        />
+        <input id="submitButton" type="submit" value="Log In" />
+      </form>
+<p> Remind Password?</p>
+      <div id="formFooter">
+        <a id="showPasswordTag" class="underlineHover">Show Password?</a>
+      </div>
+    </div>
+  </div>
+
+
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+      crossorigin="anonymous"
+/>
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+&gt; >
+</script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="
+       crossorigin="anonymous"
+        &gt;>
+</script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+ 
+</script>
+
+<script src="script.js"></script>
+
 </html>
 
-<!--    <div class="wrapper">-->
-<!--      <div id="formContent">-->
-<!--        &lt;!&ndash; Icon &ndash;&gt;-->
-<!--        <div>-->
-<!--          &lt;!&ndash; <img src="pico_logo.jpeg" alt="PICO Energy logo"> &ndash;&gt;-->
-<!--          &lt;!&ndash; <img-->
-<!--            src="http://danielzawadzki.com/codepen/01/icon.svg"-->
-<!--            id="icon"-->
-<!--            alt="User Icon"-->
-<!--          /> &ndash;&gt;-->
-<!--        </div>-->
+  <!-- <div class="wrapper"> //ORIGNAL COMMENTED
+     <div id="formContent">
+       &lt;!&ndash; Icon &ndash;&gt;
+       <div>
+         &lt;!&ndash; <img src="pico_logo.png" alt="PICO Energy logo"> &ndash;&gt;
+         &lt;!&ndash; <img
+           src="http://danielzawadzki.com/codepen/01/icon.svg"
+           id="icon"
+           alt="User Icon"
+         /> &ndash;&gt;
+       </div>
 
-<!--        &lt;!&ndash; Login Form &ndash;&gt;-->
-<!--        <form id="loginForm">-->
-<!--          <input type="text" id="login" name="login" placeholder="Login" />-->
-<!--          <input-->
-<!--            type="password"-->
-<!--            id="password"-->
-<!--            name="login"-->
-<!--            placeholder="Password"-->
-<!--          />-->
-<!--          <input id="submitButton" type="submit" value="Log In" />-->
-<!--        </form>-->
+       &lt;!&ndash; Login Form &ndash;&gt;
+       <form id="loginForm">
+         <input type="text" id="login" name="login" placeholder="Login" />
+         <input
+           type="password"
+           id="password"
+           name="login"
+           placeholder="Password"
+         />
+         <input id="submitButton" type="submit" value="Log In" />
+       </form>
 
-<!--        &lt;!&ndash; Remind Passowrd &ndash;&gt;-->
-<!--        <div id="formFooter">-->
-<!--          <a id="showPasswordTag" class="underlineHover">Show Password?</a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+       &lt;!&ndash; Remind Passowrd &ndash;&gt;
+       <div id="formFooter">
+         <a id="showPasswordTag" class="underlineHover">Show Password?</a>
+       </div>
+     </div>
+   </div>
 
 
-<!--<link-->
-<!--        rel="stylesheet"-->
-<!--        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"-->
-<!--        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="-->
-<!--        crossorigin="anonymous"-->
-<!--/>-->
-<!--<script-->
-<!--        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"-->
-<!--        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="-->
-<!--        crossorigin="anonymous"-->
-<!--&gt;</script>-->
-<!--<script-->
-<!--        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"-->
-<!--        integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="-->
-<!--        crossorigin="anonymous"-->
-<!--&gt;</script>-->
-<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+<link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+       integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+       crossorigin="anonymous"
+/>
+<script
+       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+       crossorigin="anonymous"
+&gt; >
+</script>
+<script
+     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"
+       integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="
+        crossorigin="anonymous"
+         &gt;>
+</script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  
+</script>
 
-<!--<script src="script.js"></script>-->
+<script src="script.js"></script> -->
