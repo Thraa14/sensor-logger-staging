@@ -23,19 +23,21 @@ const lastUpdateLabel = (lastReadingTime) => {
 
 const defaultChartMetadata = {
   hAxis: { title: 'Time' },
-  vAxis: { title: 'Gas Rate' },
+  vAxis: { title: 'Readings' },
   curveType: 'function',
   legend: { position: 'top', textStyle: 'bold' },
 };
 export default function FieldData({ fieldName }) {
   const [rows, setRows] = useState([]);
-  const [lineRows, setLineRows] = useState([['Time', 'GasRate'], ['', 0]]);
+  const [lineRows, setLineRows] = useState([['Time', 'GasRate', 'WaterRate', 'OrificeId', 'SpecificGravity' ,'SepPressure', 
+  'ReadingTime','GasTemprature','DiffPressure'], ['', 0, 0, 0, 0, 0 , 0 , 0 , 0 ]]);
   const [columns, setColumns] = useState([]);
   const [lastReadingTime, setLastReadingTime] = useState(null);
 
   function resetData() {
     setRows([]);
-    setLineRows([['Time', 'GasRate'], ['', 0]]);
+    setLineRows([['Time', 'GasRate', 'WaterRate', 'OrificeId', 'SpecificGravity' ,'SepPressure', 
+    'ReadingTime','GasTemprature','DiffPressure'], ['', 0, 0, 0, 0, 0 , 0 , 0 , 0]]);
     setColumns([]);
     setLastReadingTime(null);
   }
@@ -63,9 +65,11 @@ export default function FieldData({ fieldName }) {
         .toFormat('hh:mm MM/dd/yy');
       return [
         parsed,
-        parseFloat(r['GasRate']),
+        parseFloat(r['GasRate', 'WaterRate', 'OrificeId','SpecificGravity' ,'SepPressure', 
+        'ReadingTime','GasTemprature','DiffPressure']),
       ];
     });
+    
     setLineRows((old) => {
       const header = old.shift();
       const rowInfo = [...old, ...newLineRows];
