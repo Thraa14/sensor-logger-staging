@@ -29,15 +29,13 @@ const defaultChartMetadata = {
 };
 export default function FieldData({ fieldName }) {
   const [rows, setRows] = useState([]);
-  const [lineRows, setLineRows] = useState([['Time', 'GasRate', 'WaterR', 'Orifice', 'SpecG' ,'SepP',
-  'GasT','DiffP'], ['', 100, 200, 300, 400, 50 , 0 , 100 ]]);
+  const [lineRows, setLineRows] = useState([['Time', 'GasRate'], ['', 0 ]]);
   const [columns, setColumns] = useState([]);
   const [lastReadingTime, setLastReadingTime] = useState(null);
 
   function resetData() {
     setRows([]);
-    setLineRows([['Time', 'GasRate', 'WaterR', 'Orifice', 'SpecG' ,'SepP', 
-    'GasT','DiffP'], ['', 10, 20, 30, 50, 60 , 0 , 100]]);
+    setLineRows([['Time', 'GasRate'], ['', 0]]);
     setColumns([]);
     setLastReadingTime(null);
   }
@@ -65,8 +63,7 @@ export default function FieldData({ fieldName }) {
         .toFormat('hh:mm MM/dd/yy');
       return [
         parsed,
-        parseFloat(r['GasRate', 'WaterRate', 'OrificeId','SpecificGravity' ,'SepPressure', 
-        'ReadingTime','GasTemprature','DiffPressure']),
+        parseFloat(r['GasRate']),
       ];
     });
     
