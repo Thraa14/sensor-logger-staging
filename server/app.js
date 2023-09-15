@@ -22,7 +22,7 @@ import { clientsRouter } from './clients/clientsRoutes';
 
 
 const debug = makeDebug('app:main');
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 443;
 
 function initializeServerEnvironment() {
   dotenv.config();
